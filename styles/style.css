@@ -1,0 +1,162 @@
+/* 
+*styling definition list
+This sheet Contains all CSS styling
+*/
+
+body.home {
+	background-image: url(images/jobdream.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+body.job,
+body.test {
+	background-image: url(images/job.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul {
+	float: right;
+	list-style-type: none;
+	background-color: skyblue;
+}
+
+ul li.active a {
+	background-color: transparent;
+	color: black;
+	border: 1vh;
+}
+
+ul li {
+	display: inline-block;
+	background-color: transparent;
+	padding: 5px 10px;
+}
+
+ul li a {
+	text-decoration: none;
+	background-color: transparent;
+	color: #fff;
+	padding: 5px 20px;
+	border: transparent solid 1px;
+	margin-top: 10px;
+	transition: 0.6s ease;
+}
+
+ul li a:hover {
+	background-color: white;
+	color: black;
+}
+
+input[type="text"],
+input[type="number"] {
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: #ccc solid 1px;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[class="textbox"] {
+	width: 90%;
+	height: 100px;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+.textbox {
+	width: 50%;
+	height: 300px;
+}
+
+.Welcome {
+	position: absolute;
+	top: 150px;
+	left: 450px;
+	color: red;
+	background-color: white;
+}
+
+.logo img {
+	float: left;
+	width: 150px;
+	height: auto;
+}
+
+.main {
+	max-width: 100%;
+	margin: auto;
+}
+
+.space {
+	margin-bottom: 4cm;
+}
+
+footer.test {
+	margin-top: 3cm;
+}
+
+footer.home,
+footer.job,
+footer.enhancements {
+	margin-top: 3cm;
+	position: absolute;
+}
+
+.enhance {
+	width: 300px;
+	border: green solid 15px;
+	padding: 60px;
+	margin: 30px;
+	color: blue;
+	background-repeat: repeat-x;
+	animation: animate 10s linear infinite;
+}
+
+.imglogo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 120px;
+	height: 120px;
+	margin: -60px 0 0 -60px;
+	animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+	from {
+		top: 0;
+		transform: rotate(0deg);
+	}
+	to {
+		top: 150px;
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes animate {
+	from {
+		border: green solid;
+	}
+	to {
+		background-color: yellow;
+		border: yellow;
+		background: yellow;
+	}
+}
